@@ -1,10 +1,6 @@
-# Explosé:
-
 <img src="https://s3.desy.de/hackmd/uploads/upload_c3ba77674d5c58417c6df0f195b0c4ac.png" alt="unHIDE logo" height = "75">
 
 ## unHIDE - unified Helmholtz Information and data exchange
-
-
 
 ### Authors
 Pier Luigi Buttigieg [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/2048px-ORCID_iD.svg.png" alt="ORCID Logo" height ="20"> 0000-0002-4366-3088](https://orcid.org/0000-0002-4366-3088)
@@ -111,10 +107,8 @@ Subsequent efforts will include further ressources such as:
 - Helmholtz Open Science Office
 
 ## References
-[1] https://5stardata.info/en/
-[2] https://www.w3.org/TR/2014/REC-json-ld-20140116/
-[3] https://book.oceaninfohub.org/publishing/publishing.html
-[4] https://www.researchobject.org/ro-crate/
-[6] https://www.openarchives.org/pmh/
-[6] https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
-
+- [1] https://5stardata.info/en/
+- [2] https://www.w3.org/TR/2014/REC-json-ld-20140116/
+- [3] https://book.oceaninfohub.org/publishing/publishing.html
+- [4] https://www.researchobject.org/ro-crate/
+- [6] https://www.openarchives.org/pmh/
