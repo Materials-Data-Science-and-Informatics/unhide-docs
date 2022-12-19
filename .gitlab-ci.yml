@@ -1,0 +1,29 @@
+
+stages:
+  - build
+  - deploy
+
+pages:
+  stage: deploy
+  image: busybox:latest
+  script:
+    - mv _build/html public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+  environment: production
+
+build:
+  stage: build
+  image: python:latest
+  script:
+    - pip install -U jupyter-book
+    - jupyter-book clean docs
+    - jupyter-book build docs
+  artifacts:
+    paths:
+      - _build/
+  rules:
+    - if: $CI_COMMIT_BRANCH != "main"
