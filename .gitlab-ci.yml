@@ -7,7 +7,7 @@ pages:
   stage: deploy
   image: busybox:latest
   script:
-    - mv _build/html public
+    - mv docs/_build/html public
   artifacts:
     paths:
       - public
@@ -24,6 +24,6 @@ build:
     - jupyter-book build docs
   artifacts:
     paths:
-      - _build/
+      - docs/_build/
   rules:
     - if: $CI_COMMIT_BRANCH != "main"
