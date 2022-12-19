@@ -3,10 +3,27 @@ stages:
   - build
   - deploy
 
+
+docs-build:
+  stage: build
+  image: python:latest
+  script:
+    - pip install -U jupyter-book
+    - jupyter-book clean docs
+    - jupyter-book build docs
+    - ls 
+  artifacts:
+    paths:
+      - docs/_build/
+  rules:
+    - if: $CI_COMMIT_BRANCH != "main"
+
+
 pages:
   stage: deploy
   image: busybox:latest
   script:
+    - ls
     - mv docs/_build/html public
   artifacts:
     paths:
@@ -15,15 +32,3 @@ pages:
     - if: $CI_COMMIT_BRANCH == "main"
   environment: production
 
-build:
-  stage: build
-  image: python:latest
-  script:
-    - pip install -U jupyter-book
-    - jupyter-book clean docs
-    - jupyter-book build docs
-  artifacts:
-    paths:
-      - docs/_build/
-  rules:
-    - if: $CI_COMMIT_BRANCH != "main"
