@@ -42,7 +42,7 @@ jobs:
         run: |
           jupyter-book clean docs
           jupyter-book build docs
-      - name Upload artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: './docs/_build/html'
