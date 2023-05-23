@@ -2,7 +2,66 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: implementation
-- file: data_sources
+root: landingpage.md
+
+parts:
+   - caption: Introduction
+     numbered: False
+     chapters:
+       - file: introduction/about.md
+         title: "About"
+       - file: introduction/implementation.md
+         title: "Implementation overview"
+       - file: introduction/data_sources.md
+   - caption: Data in UnHIDE
+     numbered: False
+     chapters:
+       - file: data/overview.md
+         title: "Overview"
+       - file: data/dataset.md
+         title: "Dataset"
+       - file: data/documents.md
+         title: "Documents"
+       - file: data/experts.md
+         title: "Experts"
+       - file: data/Institutions.md
+         title: "Institution"
+       - file: data/Instruments.md
+         title: "Instruments"
+       - file: data/software.md
+         title: "Software"
+       - file: data/training.md
+         title: "Training"
+   - caption: Technical implementation
+     numbered: False
+     chapters:
+       - file: tech/harvesting.md
+         title: "Data Harvesting"
+       - file: tech/uplifting.md
+         title: "Data uplifting"
+       - file: tech/indexing.md
+         title: "Data indexing"
+       - file: tech/backend.md
+         title: "Backend overview"
+   - caption: Interacting with UnHIDE data
+     numbered: False
+     chapters:
+       - file: interfaces/usecases.md
+         title: "Use case examples"
+       - file: interfaces/web.md
+         title: "Web search"
+       - file: interfaces/sparql.md
+         title: "SPARQL endpoint"
+       - file: interfaces/api.md
+         title: "REST API"
+   - caption: Related Knowledge
+     numbered: False
+     chapters:
+       - file: knowledge/overview.md
+         title: "Structured data on the web"
+       - file: knowledge/tools.md
+         title: "Tools around Linked Data"
+       - file: knowledge/other_graphs.md
+         title: "Other Graphs"
+
+
