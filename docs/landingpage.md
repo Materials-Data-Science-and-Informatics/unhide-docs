@@ -36,10 +36,6 @@ With the implementation of the Helmholtz-KG, unHIDE will create substantial addi
 ```{tableofcontents}
 ```
 
-## Project Authors
-- Jens Bröder [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/2048px-ORCID_iD.svg.png" alt="ORCID Logo" height ="20"> 0000-0002-4366-3088](https://orcid.org/0000-0001-7939-226X)
-- Pier Luigi Buttigieg [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/2048px-ORCID_iD.svg.png" alt="ORCID Logo" height ="20"> 0000-0002-4366-3088](https://orcid.org/0000-0002-4366-3088)
-- Volker Hofmann [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/2048px-ORCID_iD.svg.png" alt="ORCID Logo" height ="20"> 0000-0002-5149-603X](https://orcid.org/0000-0002-5149-603X)
 
 ## Contributors and Partners
 

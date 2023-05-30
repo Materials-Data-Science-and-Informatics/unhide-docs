@@ -43,3 +43,12 @@ Subsequent efforts will include further resources such as:
 - Laboratory information management systems (LIMS)
 - Helmholtz Open Science Office
 
+And connecting possibly to external metadata providers and or graphs for data enrichment:
+- [Datacite](https://datacite.org/)
+- [OpenAIRE](https://explore.openaire.eu/)
+- [Schoolix](http://www.scholix.org/)
+- [Orcid](https://orcid.org/)
+- [ROR](https://ror.org)
+- [OpenAlex](https://openalex.org/)
+
+
