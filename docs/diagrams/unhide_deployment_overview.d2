@@ -1,0 +1,129 @@
+title: UnHIDE deployment {
+  shape: text
+  near: top-center
+  style: {
+    font-size: 75
+  }
+}
+
+hdfcloud: HDF-Cloud{
+    style: {
+    font-size: 55
+    }
+    cloud: Virtual Machine instance{
+        icon: https://icons.terrastruct.com/aws%2F_Group%20Icons%2FVirtual-private-cloud-VPC_light-bg.svg
+        style: {
+            font-size: 55
+      }
+    store: Mounted Data Volume {
+        style: {
+            font-size: 55
+      }
+        icon: https://icons.terrastruct.com/infra%2F011-data-storage.svg
+        UnHIDE Data files {
+            icon: https://icons.terrastruct.com/essentials%2F257-file.svg
+            style {
+            multiple: true
+            }
+        }
+        SOLR Index {
+            icon: https://icons.terrastruct.com/essentials%2F117-database.svg
+        }
+        UnHIDE Graph files {
+            icon: https://icons.terrastruct.com/essentials%2F119-database.svg
+        }
+    }
+
+    pipe: Data pipeline {
+        icon: https://icons.terrastruct.com/dev%2Fdocker.svg
+        Harvesters {
+            icon: https://icons.terrastruct.com/dev%2Fpython.svg
+        }
+    }
+
+    web: Web front end {
+        icon: https://icons.terrastruct.com/dev%2Fdocker.svg
+        app: React app {
+            icon: https://icons.terrastruct.com/dev%2Freact.svg
+        }
+    }
+
+    api: API {
+        icon: https://icons.terrastruct.com/dev%2Fdocker.svg
+        fastapi: FastAPI {
+            icon: ./fastapi.svg
+        }
+    }
+
+    jena: Apache Jena {
+            style: {
+            font-size: 55
+      }
+        icon: https://icons.terrastruct.com/dev%2Fdocker.svg
+       graph: UnHIDE Graph {
+        icon: https://icons.terrastruct.com/azure%2FManagement%20and%20Governance%20Service%20Color%2FResource%20Graph%20Explorer.svg
+       }
+       sparql: Fuseki SPARQL API {
+         icon: ./sparql.svg
+       }
+    }
+
+    nginx: nginx-proxy{
+        icon: https://icons.terrastruct.com/dev%2Fdocker.svg
+        NGINX:  {
+            icon: ./nginx.svg
+        }
+    }
+
+    letsencrypt: letsencrypt-nginx-proxy-companion {
+        icon: https://icons.terrastruct.com/dev%2Fdocker.svg
+    }
+
+    solr: SOLR instance: {
+        icon: https://icons.terrastruct.com/dev%2Fdocker.svg
+        Apache SOLR {
+            icon: ./solr.svg
+        }
+    }
+    Indexer {
+        icon: https://icons.terrastruct.com/dev%2Fdocker.svg
+        indexer {
+            icon: https://icons.terrastruct.com/dev%2Fpython.svg
+        }
+    }
+
+    store -> indexer: reads from 
+    pipe -> store: stores data
+    jena <-> store: store & retrieve graph
+    solr <-> store: stores & retrieve index
+    solr <- api: queries
+    Jena.graph <- jena.sparql: queries
+    jena.sparql <-> nginx: routes
+    letsencrypt <-> nginx: encrypts
+    web -> api: requests
+    web <-> nginx: routes
+    api <-> nginx: routes
+    }
+
+    Backup {
+        icon: https://icons.terrastruct.com/essentials%2F117-database.svg
+    }
+    Backup <- cloud.store
+
+    Backup VM Image {
+        icon: https://icons.terrastruct.com/essentials%2F117-database.svg
+    }
+    Backup VM Image <- cloud : manual
+}
+
+Internet {
+    icon: https://icons.terrastruct.com/essentials%2F140-internet.svg
+    style: {
+        font-size: 55
+    }
+    domain1: search.unhide.helmholtz-metadaten.de
+    domain2: api.unhide.helmholtz-metadaten.de
+    domain3: sparql.unhide.helmholtz-metadaten.de 
+}
+
+hdfcloud.cloud.nginx <-> Internet: handles requests

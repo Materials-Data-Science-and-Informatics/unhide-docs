@@ -1,0 +1,47 @@
+
+unhide {
+    icon: https://icons.terrastruct.com/dev%2Fgitlab.svg
+    style: {
+        font-size: 55
+  }
+
+unhide-ui{
+    icon: https://icons.terrastruct.com/dev%2Fgit.svg
+    style: {
+        font-size: 55
+  }
+}
+data-harvesting{
+    icon: https://icons.terrastruct.com/dev%2Fgit.svg
+    style: {
+        font-size: 55
+  }
+}
+
+documentation{
+    icon: https://icons.terrastruct.com/dev%2Fgit.svg
+}
+
+administration{
+    icon: https://icons.terrastruct.com/dev%2Fgit.svg
+}
+
+unhide_docker {
+    icon: https://icons.terrastruct.com/dev%2Fgit.svg
+}
+
+
+unhide-ui.API
+unhide-ui.web-frontend
+unhide-ui.SOLR
+unhide-ui.Indexer
+data-harvesting.Harvester
+data-harvesting.Aggregator
+data-harvesting.RDF-Database
+data-harvesting.Patches
+data-harvesting.DataModel
+documentation
+administration
+unhide_docker -> unhide-ui: deploys
+unhide_docker -> data-harvesting: deploys
+}

@@ -1,0 +1,52 @@
+title: |md
+  # UnHIDE Data Pipeline
+
+| { near: top-center }
+
+Providers.Git Providers -> Harvesters.GitHarvester: harvest with
+Providers.Sitemap Provider -> Harvesters.SitemapHarvester: harvest with
+Providers.OAI PMH Provider -> Harvesters.OAIHarvester: harvest with
+Providers.DataCite -> Harvesters.DataCiteHarvester: harvest with
+Providers.Scholix -> Harvesters.ScholixHarvester: harvest with
+
+
+Config -> Harvesters.GitHarvester: read
+Config -> Harvesters.SitemapHarvester: read
+Config -> Harvesters.OAIHarvester: read
+Config -> Harvesters.DataCiteHarvester: read
+Config -> Harvesters.ScholixHarvester: read
+Config -> Aggregator: read
+
+json-ld files -> UnHIDE Data: store as
+Harvester Metadata -> UnHIDE Data: annotate
+Aggregator -> Uplifting Operations: defines
+Uplifting Operations -> UnHIDE Data: uplift
+
+UnHIDE Data -> Uplifted json-ld: provide
+
+
+
+
+Harvesters.GitHarvester -> Repository
+Repository.codemeta -> json-ld files: store
+
+
+
+Harvesters.SitemapHarvester -> json-ld files: store
+Harvesters.OAIHarvester -> Schema converter: store
+Schema converter -> json-ld files: store
+Harvesters.DataCiteHarvester -> json-ld files: store
+Harvesters.ScholixHarvester -> json-ld files: store
+
+
+Harvesters -> Harvester Metadata: provides
+
+
+Uplifted json-ld -> Jena.UnHIDE Graph: inject
+Uplifted json-ld -> Indexer: indexes
+Indexer -> SOLR instance: inject
+
+SOLR instance <- API: queries
+Jena.UnHIDE Graph <- SPARQL-API: queries
+Uplifting Operations <- Jena.UnHIDE Graph: uses
+Web Front end-> API: requests
