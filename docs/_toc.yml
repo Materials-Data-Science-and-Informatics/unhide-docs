@@ -32,17 +32,6 @@ parts:
          title: "Software"
        - file: data/training.md
          title: "Training"
-   - caption: Technical implementation
-     numbered: False
-     chapters:
-       - file: tech/harvesting.md
-         title: "Data Harvesting"
-       - file: tech/uplifting.md
-         title: "Data uplifting"
-       - file: tech/indexing.md
-         title: "Data indexing"
-       - file: tech/backend.md
-         title: "Backend overview"
    - caption: Interacting with UnHIDE data
      numbered: False
      chapters:
@@ -63,5 +52,28 @@ parts:
          title: "Tools around Linked Data"
        - file: knowledge/other_graphs.md
          title: "Other Graphs"
+   - caption: Technical implementation
+     numbered: True
+     chapters:
+       - file: tech/harvesting.md
+         title: "Data Harvesting"
+       - file: tech/uplifting.md
+         title: "Data uplifting"
+       - file: tech/backend.md
+         title: "Architecture"
+         sections:
+         - file: dev_guide/architecture/01_introduction_and_goals.md
+         - file: dev_guide/architecture/02_architecture_constraints.md
+         - file: dev_guide/architecture/03_system_scope_and_context.md
+         - file: dev_guide/architecture/04_solution_strategy.md
+         - file: dev_guide/architecture/05_building_block_view.md 
+         - file: dev_guide/architecture/06_runtime_view.md
+         - file: dev_guide/architecture/07_deployment_view.md
+         - file: dev_guide/architecture/08_concepts.md
+         - file: dev_guide/architecture/09_architecture_decisions.md
+         - file: dev_guide/architecture/10_quality_requirements.md
+         - file: dev_guide/architecture/11_technical_risks.md
+         - file: dev_guide/architecture/12_glossary.md
+
 
 
