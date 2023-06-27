@@ -70,4 +70,15 @@ concepts](images/08-Crosscutting-Concepts-Structure-EN.png)
 See [Concepts](https://docs.arc42.org/section-8/) in the arc42
 documentation.
 :::
+## Domain concepts
 
+### Provenance of linked-data
+
+### Internal Data Model
+
+### Updating linked data
+
+
+## Operational concepts
+
+### Interoperability with other graphs

@@ -111,4 +111,26 @@ over completeness. Specify important, surprising, risky, complex or
 volatile building blocks. Leave out normal, simple, boring or
 standardized parts of your system.
 :::
+## Whitebox Overall System
 
+A rough overview of UnHIDE related repositories under the [project](https://codebase.helmholtz.cloud/hmc/hmc-public/unhide)
+are shown in the figure below.
+![repository_overview](../../diagrams/unhide_overview_repositories.svg)
+
+The *administration repository* is private and used for project related things that should not be made
+public. Therefore you can link of to secret information from the docs to there.
+
+The *documentation repository* is for the documentation of the overall project, which basically is
+what you are reading here and now.
+
+The *unhide-docker* repository contains different docker files for full or partly deployment of the 
+whole project. Docker files for developments environments also go there.
+
+The *data-harvesting* repository is a python library with a command line tool to run harvesters and
+data processing. Functionality should be kept general where ever possible and only UnHIDE 
+specifically configured.
+
+The *unhide-ui* repository contains the [web front-end](https://search.unhide.helmholtz-metadaten.de) for UnHIDE, 
+exposing the full text search through the data.
+Currently, it also contains the backend pieces which are needed for the full text search index, i.e 
+the indexer, an API and some SOLR config related things and schemas.

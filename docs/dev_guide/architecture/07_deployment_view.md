@@ -99,6 +99,35 @@ Mapping of Building Blocks to Infrastructure
 :   *\<description of the mapping>*
 :::
 
-Unhide is deployed on HDf-cloud
+## Infrastructure Level 1 {#_infrastructure_level_1}
 
-![overview](../../diagrams/unhide_deployment_overview.svg)
+
+UnHIDE is deployed on [HDF-cloud](https://www.fz-juelich.de/en/ias/jsc/systems/scientific-clouds/hdf-cloud)
+at the Jülich supercomputing center. The cloud is an open stack instance hosted as a service by the supercomputing center.
+
+The choice to host there, was to host on (institute) extern reliable infrastructure, for low cost.
+So far the support is very nice and quick and there are no issues.
+UnHIDE runs on a single virtual machine, while data is mounted via a volume.
+
+
+
+***\<Overview Diagram>***
+
+On the HDF-Cloud virtual machine the data pipeline with all the harvesters is executed through a cron job periodically.
+(So the data pipeline is not event based, with for now is for simplicity.) The overview of this 
+deployment system is shown below in Fig. @fig:overview_deploy.
+![overview_deploy](../../diagrams/unhide_deployment_overview.svg){#fig:overview_deploy}
+The figure clearly shows all docker container spawned for the deployment of UnHIDE. 
+Each part and service is running in its own docker container, which can communicate with other containers
+over an internal network. All connections from and to the outside world, i.e. our domains on the internet, go through
+a reverse proxy using Nginx with ssl.
+
+### Deployment of the documentation
+
+![repository_overview](../../diagrams/documentation_deployment.svg)
+
+The Figure above demonstrates, how the UnHIDE documentation is currently deployed.
+Because `gitlab pages` is not enabled for our usecase and needs on the gitlab the unhide project is in,
+we decided to mirror the documentation repository to [github](https://github.com/Materials-Data-Science-and-Informatics/unhide-docs) and deploy the documentation from there
+over github pages.
+

@@ -14,7 +14,7 @@ parts:
          title: "Implementation overview"
        - file: introduction/data_sources.md
    - caption: Data in UnHIDE
-     numbered: False
+     numbered: True
      chapters:
        - file: data/overview.md
          title: "Overview"
@@ -55,10 +55,13 @@ parts:
    - caption: Technical implementation
      numbered: True
      chapters:
-       - file: tech/harvesting.md
-         title: "Data Harvesting"
-       - file: tech/uplifting.md
-         title: "Data uplifting"
+       - file: tech/datapipe.md
+         title: Data pipeline
+         sections:
+         - file: tech/harvesting.md
+           title: "Data Harvesting"
+         - file: tech/uplifting.md
+           title: "Data uplifting"
        - file: tech/backend.md
          title: "Architecture"
          sections:
