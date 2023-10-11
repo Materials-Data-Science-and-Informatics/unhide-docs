@@ -14,6 +14,10 @@ exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoin
 # Auto-exclude files not in the toc
 only_build_toc_files        : false
 
+
+bibtex_bibfiles:
+    - references.bib
+    
 #######################################################################################
 # Execution settings
 execute:
@@ -81,7 +85,8 @@ repository:
   url                       : https://codebase.helmholtz.cloud/hmc/hmc-public/unhide/documentation  # The URL to your book's repository
   path_to_book              : docs  # A path to your book's folder, relative to the repository root.
   branch                    : main  # Which branch of the repository should be used when creating links
-
+  provider                  : gitlab
+ 
 #######################################################################################
 # Advanced and power-user settings
 sphinx:
@@ -89,3 +94,5 @@ sphinx:
   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
   recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
   config                    :   # key-value pairs to directly over-ride the Sphinx configuration
+    html_theme_options:
+      repository_provider: custom

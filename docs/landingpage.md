@@ -4,14 +4,14 @@
 
 # unHIDE - unified Helmholtz Information and data exchange
 
-```{tableofcontents}
-```
+
+![unhide_overview](./images/unhide_overview.png)
 
 ## Introduction & Scope
 
 Research across the Helmholtz Association (HGF) depends and thrives on a complex network of inter- and multidisciplinary collaborations which spans across its 18 Centres and beyond. 
 
-However, the (meta)data generated through the HGF's research and operations is typically siloed within institutional infrastructure and often within individual teams. The result is that the wealth of the HGF's (meta)data is stored and maintained in a scattered manner, and cannot be used to its full value to scientists, managers, stratgists, and policy makers. 
+However, the (meta)data generated through the HGF's research and operations is typically siloed within institutional infrastructure and often within individual teams. The result is that the wealth of the HGF's (meta)data is stored and maintained in a scattered manner, and cannot be used to its full value to scientists, managers, strategists, and policy makers. 
 
 To address this challenge, the Helmholtz Metadata Collaboration (HMC) is launching the **unified Helmholtz Information and Data Exchange (unHIDE)**. This initiative seeks to create a lightweight and sustainable interoperability layer to interlink data infrastructures and provide greater, cross-organisational access to the HGF's (meta)data and information assets. Using proven and globally adopted knowledge graph technology (Box 1), unHIDE will develop a comprehensive association-wide Knowledge Graph (KG) the "Helmholtz-KG": a solution to connect (meta)data, information, and knowledge. 
 
@@ -22,20 +22,20 @@ To address this challenge, the Helmholtz Metadata Collaboration (HMC) is launchi
 > - A "knowledge graph" uses such a graph structure to capture knowledge about how a collection of things (represented as nodes) relate to one another (via edges). This helps organisations keep track of their collective knowledge, especially in complex and rapidly changing scenarios.
 > - Social networks are perhaps the best known graphs, that store knowledge about who knows whom and how, what their interests are, what groups they belong to, and what content they create and interact with.
 
-With the implementation of the Helmholtz-KG, unHIDE will create substantial additinal value for the Helmholtz digital ecosystem and its interconnectivity:
+With the implementation of the Helmholtz-KG, unHIDE will create substantial additional value for the Helmholtz digital ecosystem and its interconnectivity:
 
 **With the development of the Helmholtz-KG, unHide will:** 
 - increase discoverability and actionability of HGF data across the whole Association* 
 - motivate enhancement of (meta)data quality [1] and interoperability
-- provide overviews and diagnositcs of the HGF dataspace and digital assets
+- provide overviews and diagnostics of the HGF data-space and digital assets
 - allow for traceable and reproducible recovery of (meta)data to enhance research
 - support connectivity of HGF data to interact with global infrastructures and projects
 - act as a central access and distribution point for stakeholders within and beyond the HGF
 
-## Project Authors
-- Jens Bröder [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/2048px-ORCID_iD.svg.png" alt="ORCID Logo" height ="20"> 0000-0002-4366-3088](https://orcid.org/0000-0001-7939-226X)
-- Pier Luigi Buttigieg [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/2048px-ORCID_iD.svg.png" alt="ORCID Logo" height ="20"> 0000-0002-4366-3088](https://orcid.org/0000-0002-4366-3088)
-- Volker Hofmann [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/2048px-ORCID_iD.svg.png" alt="ORCID Logo" height ="20"> 0000-0002-5149-603X](https://orcid.org/0000-0002-5149-603X)
+## Table of contents
+```{tableofcontents}
+```
+
 
 ## Contributors and Partners
 
@@ -60,7 +60,5 @@ Information and Data Science strategic initiative.
 - [4] https://www.researchobject.org/ro-crate/
 - [6] https://www.openarchives.org/pmh/
 
-```{bibliography}
-```
 
 

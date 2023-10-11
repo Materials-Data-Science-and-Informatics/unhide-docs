@@ -1,0 +1,33 @@
+title: |md
+  # UnHIDE documentation deployment
+
+| { near: top-center }
+
+
+gitlab: Gitlab {
+    icon: https://icons.terrastruct.com/dev%2Fgitlab.svg
+    repo: Documentation Repository: {
+        icon: https://icons.terrastruct.com/essentials%2F245-folder.svg
+    }
+}
+
+github: Github {
+    icon: https://icons.terrastruct.com/dev%2Fgithub.svg
+    repo: Repository Mirror: {
+        icon: https://icons.terrastruct.com/essentials%2F245-folder.svg
+        main: main branch:{
+                icon: https://icons.terrastruct.com/dev%2Fgit.svg
+            }
+    }
+}
+
+pages: Github Pages {
+    icon: https://icons.terrastruct.com/essentials%2F140-internet.svg
+    web: docs.unhide.helmhotz-metadaten.de: {
+        icon: https://icons.terrastruct.com/tech%2Fbrowser-2.svg
+    }
+}
+
+
+gitlab.repo -> github.repo: mirrored
+github.repo.main -> pages.web: deployed on

@@ -8,6 +8,6 @@ jupyter-book build docs
 ```
 
 Also ideally the terms should go somewhere else and be automatically included in this.
-The same goes for code documenation of the pipelines and their usage.
+The same goes for code documentation of the pipelines and their usage.
 
 

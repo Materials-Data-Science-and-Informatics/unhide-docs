@@ -1,0 +1,22 @@
+{"@context": "http://schema.org",
+"@type": "Event",
+"description": "Sponsored by Helmholtz Information & Data Science Academy (HIDA)in cooperation with 
+Core Facility Statistical Consulting at Helmholtz Zentrum München - German Research Center for 
+Environmental Health (Helmholtz Munich) is a fantastic tool to efficiently 
+write manuscripts and research reports. It relieves the work of making your manuscripts and reports 
+reproducible and transferable. You combine the coding in R and the writing of the documentation/interpretation 
+of the results all in the same file and compile it directly as a report (e.g. as html, pdf or word document) 
+After this course, you will no longer need to create multiple files in order to produce one single 
+research document. Tables, figures, citations and much more can be included in one single document 
+to be directly shared with your peers or PIs.Prerequisites: Programming skills with R, e.g. course 
+'Introduction to R' More details here. Course Days and TimesMay 25, 2023, 9 am - 12:30 pm May 26, 2023, 
+9 am - 12:30 pm NOTE: Registration will open 4 weeks before the course's starting date.",
+"endDate": "2023-05-26T12:30:00+02:00",
+"image": "https://events.hifis.net/event/656/logo-1641968619.png",
+"location": { "@type": "Place",
+      "address": "No address set",
+      "name": "online"},
+"name": "RMarkdown",
+"startDate": "2023-05-25T09:00:00+02:00",
+"url": "https://events.hifis.net/event/656/"
+}
