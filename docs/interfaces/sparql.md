@@ -1,7 +1,7 @@
 # SPARQL endpoint
 
 UnHIDE exposes the full public part of the graph through a read only SPARQL endpoint:
-https://sparql.unhide.helmholtz-metadaten.de/.
+currently available under https://sparql.unhide.helmholtz-metadaten.de/sparql/ but in the future mainly under https://sparql.unhide.helmholtz-metadaten.de/.
 
 <p style="text-align: center;"><img align="right" width="250" src="https://community.openlinksw.com/uploads/default/original/1X/e92dc4ebb5a2f272de53b2dff1f928f5d940c1f3.png"> </p> 
 
