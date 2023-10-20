@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: landingpage.md
+root: intro.md
 
 parts:
    - caption: Introduction
