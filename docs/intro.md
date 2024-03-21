@@ -39,18 +39,21 @@ With the implementation of the Helmholtz-KG, unHIDE will create substantial addi
 
 ## Contributors and Partners
 
+% [<img src="./images/hzb-logo-a4-rgb.png" alt="HZB" width=40% height=40%>](https://www.helmholtz-berlin.de/)
 
-[<img style="vertical-align: middle;" alt="FZJ" src='https://github.com/Materials-Data-Science-and-Informatics/Logos/raw/main/FZJ/FZJ.png' width=20% height=20%>](https://fz-juelich.de)
+[<img style="vertical-align: left;" alt="FZJ" src='https://github.com/Materials-Data-Science-and-Informatics/Logos/raw/main/FZJ/FZJ.png' width=60% height=60%>](https://fz-juelich.de)
+![HZB](./images/hzb-logo-a4-rgb.png)
+
 
 
 ## Acknowledgements
 
 
-[<img style="vertical-align: middle;" alt="HMC Logo" src='https://github.com/Materials-Data-Science-and-Informatics/Logos/raw/main/HMC/HMC_Logo_M.png' width=50% height=50%>](https://helmholtz-metadaten.de)
-
 This project was developed and funded by the Helmholtz Metadata Collaboration
 (HMC), an incubator-platform of the Helmholtz Association within the framework of the
 Information and Data Science strategic initiative.
+
+[<img style="vertical-align: middle;" alt="HMC Logo" src='https://github.com/Materials-Data-Science-and-Informatics/Logos/raw/main/HMC/HMC_Logo_M.png' width=50% height=50%>](https://helmholtz-metadaten.de)
 
 
 ## References

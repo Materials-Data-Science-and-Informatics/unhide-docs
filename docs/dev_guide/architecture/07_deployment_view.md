@@ -99,7 +99,7 @@ Mapping of Building Blocks to Infrastructure
 :   *\<description of the mapping>*
 :::
 
-## Infrastructure Level 1 {#_infrastructure_level_1}
+## Infrastructure Level 1
 
 
 UnHIDE is deployed on [HDF-cloud](https://www.fz-juelich.de/en/ias/jsc/systems/scientific-clouds/hdf-cloud)

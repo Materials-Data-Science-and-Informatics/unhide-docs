@@ -1,8 +1,8 @@
 # Data pipeline
 
-In UnHIDE data is harvested from connected providers and partners. 
-Then data is 'uplifted', i.e semantically enriched and or completed, 
-where possible from aggregated data or schema.org semantics.
+In UnHIDE metadata about research outputs is harvested from connected providers and partners. 
+Then the original metadata is 'uplifted', i.e semantically enriched and or completed, 
+where possible from aggregated data or schema.org semantics as an example of how it can be.
 
 ## Overview
 
@@ -36,4 +36,16 @@ The second direction is there to provide full text search on the data to end use
 For this an index of each uplifted data record is constructed and uploaded into a single SOLR index,
 which is exposed to a certain extend via a custom fastAPI. A web front end using the javascript library 
 React provides a user interface for the full text search and supports special use cases as a service
-to certain stakeholder groups. 
+to certain stakeholder groups.
+
+
+The technical implementation is currently a minimal running version, by exposing each 
+component and functionality through the command line interface `hmc-unhide` and then using 
+cron jobs to run them from time to time. On the deployment instance this can be run monthly or
+weekly. In the longer term, the pipeline orchestration itself should become more sophisticated.
+For this one could deploy a workflow manager with provenance tracking like (AiiDA)
+or one with less overhead depending on the needs, also if one wants to move to a more event based system
+with more fault tolerance for errors of individual records or data sources. Currently, 
+in the minimal implementation there is the risks that a not caught failure in a subtask 
+fails a larger part of the pipeline. Which is then only logged, but has to be resolved in a manual way.
+

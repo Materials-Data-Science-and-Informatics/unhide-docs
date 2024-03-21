@@ -9,7 +9,7 @@ parts:
      numbered: False
      chapters:
        - file: introduction/about.md
-         title: "About"
+         title: "About & Mission"
        - file: introduction/implementation.md
          title: "Implementation overview"
        - file: introduction/data_sources.md

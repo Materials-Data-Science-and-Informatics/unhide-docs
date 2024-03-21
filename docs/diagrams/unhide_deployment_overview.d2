@@ -1,4 +1,4 @@
-title: UnHIDE deployment {
+title: Helmholtz Knowledge graph deployment {
   shape: text
   near: top-center
   style: {
@@ -6,7 +6,7 @@ title: UnHIDE deployment {
   }
 }
 
-hdfcloud: HDF-Cloud{
+hdfcloud: JSC-Cloud{
     style: {
     font-size: 55
     }
@@ -55,7 +55,7 @@ hdfcloud: HDF-Cloud{
         }
     }
 
-    jena: Apache Jena {
+    virtuoso: OpenLink Virtuoso {
             style: {
             font-size: 55
       }
@@ -63,8 +63,8 @@ hdfcloud: HDF-Cloud{
        graph: UnHIDE Graph {
         icon: https://icons.terrastruct.com/azure%2FManagement%20and%20Governance%20Service%20Color%2FResource%20Graph%20Explorer.svg
        }
-       sparql: Fuseki SPARQL API {
-         icon: ./sparql.svg
+       sparql: OpenLink SPARQL API {
+         icon: ./virtuoso_logo.png
        }
     }
 
@@ -94,11 +94,11 @@ hdfcloud: HDF-Cloud{
 
     store -> indexer: reads from 
     pipe -> store: stores data
-    jena <-> store: store & retrieve graph
-    solr <-> store: stores & retrieve index
+    jena <-> store.UnHIDE Graph files: store & retrieve graph
+    solr <-> store.SOLR Index: stores & retrieve index
     solr <- api: queries
-    Jena.graph <- jena.sparql: queries
-    jena.sparql <-> nginx: routes
+    Virtuoso.graph <- jena.sparql: queries
+    virtuoso.sparql <-> nginx: routes
     letsencrypt <-> nginx: encrypts
     web -> api: requests
     web <-> nginx: routes
