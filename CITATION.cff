@@ -1,0 +1,92 @@
+cff-version: 1.2.0
+message: If you use or want to cite any software around unHIDE and the Helmholtz knowledge graph, please cite it using these metadata.
+type: software
+title: unhide-software
+abstract: This is representative for the software around the unHIDE initiative and the helmholtz knowledge graph.
+  The software includes a library for harvesting linked data on the web, a web front end for user friendly search 
+  as well as documentation and docker compose deployment files for the whole software
+  stack behind the Helmholtz knowledge graph, work from the unHIDE initiative. Deployment
+  includes containers for the harvesters and utility, the API, SOLR, Virtuoso, Web
+  Frontend as well as for nginx and letsencrypt. More information on the unHIDE initiative,
+  which was launched by the Helmholtz Metadata Collaboration (HMC), you can find under
+  https://docs.unhide.helmholtz-metadaten.de.
+version: 1.0.0
+keywords:
+- unhide
+- Helmholtz association
+- deployment
+- docker
+- docker-compose
+- HMC
+- metadata
+- linked data
+- solr
+- virtuoso
+- knowledge graph
+- helmholtz knowledge graph
+- science
+authors:
+- orcid: https://orcid.org/0000-0002-0465-1009
+  family-names: D'Mello
+  affiliation: Forschungszentrum Jülich GmbH
+  given-names: Fiona
+  email: f.dmello@fz-juelich.de
+- orcid: https://orcid.org/0000-0001-7939-226X
+  family-names: Bröder
+  affiliation: Forschungszentrum Jülich GmbH
+  given-names: Jens
+  email: j.broeder@fz-juelich.de
+- orcid: https://orcid.org/0000-0002-4366-3088
+  family-names: Buttigieg
+  affiliation: Alfred Wegener Institute for Polar and Marine Research
+  given-names: Pier Luigi
+  email: pier.buttigieg@awi.de
+- orcid: https://orcid.org/0000-0002-2818-5890
+  family-names: Fathalla
+  affiliation: Forschungszentrum Jülich GmbH
+  given-names: Said
+  email: s.fathalla@fz-juelich.de
+- orcid: https://orcid.org/0000-0002-3968-2446
+  family-names: Preuß
+  affiliation: Helmholtz-Zentrum Berlin für Materialien und Energie
+  given-names: Gabriel
+  email: gabriel.preuss@helmholtz-berlin.de
+- orcid: https://orcid.org/0000-0002-5149-603X
+  family-names: Hofmann
+  affiliation: Forschungszentrum Jülich GmbH
+  given-names: Volker
+  email: v.hofmann@fz-juelich.de
+- orcid: https://orcid.org/0000-0001-9560-4728
+  family-names: Sandfeld
+  affiliation: Forschungszentrum Jülich GmbH
+  given-names: Stefan
+  email: s.sandfeld@fz-juelich.de
+- orcid: https://orcid.org/0000-0003-0575-2853
+  family-names: Mannix
+  affiliation: Helmholtz-Zentrum Berlin für Materialien und Energie
+  given-names: Oonagh
+  email: oonagh.mannix@helmholtz-berlin.de
+contact:
+- orcid: https://orcid.org/0000-0002-0465-1009
+  family-names: D'Mello
+  affiliation: Forschungszentrum Jülich GmbH
+  given-names: Fiona
+  email: f.dmello@fz-juelich.de
+- orcid: https://orcid.org/0000-0001-7939-226X
+  family-names: Bröder
+  affiliation: Forschungszentrum Jülich GmbH
+  given-names: Jens
+  email: j.broeder@fz-juelich.de
+- orcid: https://orcid.org/0000-0002-3968-2446
+  family-names: Preuß
+  affiliation: Helmholtz-Zentrum Berlin für Materialien und Energie
+  given-names: Gabriel
+  email: gabriel.preuss@helmholtz-berlin.de
+- orcid: https://orcid.org/0000-0003-0575-2853
+  family-names: Mannix
+  affiliation: Helmholtz-Zentrum Berlin für Materialien und Energie
+  given-names: Oonagh
+  email: oonagh.mannix@helmholtz-berlin.de
+license: MIT
+url: https://codebase.helmholtz.cloud/hmc/hmc-public/unhide
+repository-code: https://codebase.helmholtz.cloud/hmc/hmc-public/unhide/unhide-docker.git
